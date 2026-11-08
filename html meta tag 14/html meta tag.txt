@@ -1,0 +1,85 @@
+HTML-এ <meta> ট্যাগ মূলত ওয়েবসাইটের মেটাডেটা (ডাটা সম্পর্কিত ডাটা) সরবরাহ করে। এটি ব্রাউজার, সার্চ ইঞ্জিন (SEO), এবং সামাজিক যোগাযোগ মাধ্যমের জন্য অত্যন্ত গুরুত্বপূর্ণ। <meta> ট্যাগ সবসময় HTML ডকুমেন্টের <head> সেকশনের ভেতরে লেখা হয় এবং এর কোনো সমাপনী ট্যাগ (</meta>) থাকে না (এটি একটি Self-closing/Empty tag)।
+
+নিচে <meta> ট্যাগের প্রধান প্রধান উপাদান, কোডিং এবং সহজ উদাহরণ আলোচনা করা হলো:
+
+<meta> ট্যাগের প্রধান উপাদানসমূহ (Attributes)
+১. charset: ওয়েবসাইটের ক্যারেক্টার এনকোডিং (Character Encoding) নির্ধারণ করে।
+২. name & content: সাধারণ মেটাডেটা যেমন—লেখকের নাম, বিবরণ, বা কি-ওয়ার্ড নির্দিষ্ট করতে ব্যবহৃত হয়।
+৩. http-equiv: ব্রাউজারের কাজের ধরন বা হেডার সম্পর্কিত নির্দেশ দেওয়ার জন্য ব্যবহৃত হয়।
+৪. viewport: ওয়েবসাইটকে মোবাইল ও বিভিন্ন ডিভাইসে রেসপনসিভ (Responsive) করার জন্য ব্যবহৃত হয়।
+
+বিভিন্ন ব্যবহারের কোডিং ও উদাহরণ
+১. ক্যারেক্টার এনকোডিং (Character Encoding)
+বাংলাসহ যেকোনো ভাষার অক্ষর যেন ওয়েবসাইট ঠিকমতো প্রদর্শন করতে পারে, সেজন্য এটি ব্যবহার করা বাধ্যতামূলক।
+
+HTML
+<meta charset="UTF-8">
+২. সার্চ ইঞ্জিন অপটিমাইজেশন (SEO) মেটা ট্যাগ
+সার্চ ইঞ্জিনে আপনার পেজটি কীভাবে দেখাবে তা নিয়ন্ত্রণ করতে এই ট্যাগগুলো ব্যবহার করা হয়।
+
+বর্ণনা (Description): সার্চ ফলাফলে সাইটের লিংকের নিচে এই অংশটি দেখায়।
+
+কি-ওয়ার্ড (Keywords): সাইটের প্রধান বিষয়বস্তু সম্পর্কিত কিছু শব্দ।
+
+লেখক (Author): পেজটি কে তৈরি করেছে তার নাম।
+
+HTML
+<!-- সাইটের বিবরণ -->
+<meta name="description" content="বাংলায় এইচটিএমএল (HTML) শিখুন একদম শুরু থেকে সহজে।">
+
+<!-- কি-ওয়ার্ডস -->
+<meta name="keywords" content="HTML, Meta Tag, Web Design, Bengali Tutorial">
+
+<!-- লেখক -->
+<meta name="author" content="রহিম আহমেদ">
+৩. মোবাইল রেসপনসিভনেস (Viewport Meta Tag)
+মোবাইল, ট্যাবলেট বা যেকোনো স্ক্রিনে যেন ওয়েবসাইটটি সঠিকভাবে মানিয়ে নেয়, সেজন্য এটি ব্যবহার করা হয়।
+
+HTML
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+width=device-width: স্ক্রিনের প্রস্থ অনুযায়ী লেআউট সেট করে।
+
+initial-scale=1.0: পেজ লোড হওয়ার পর শুরুর জুম লেভেল নির্ধারণ করে।
+
+৪. HTTP-Equiv মেটা ট্যাগ
+এটি ব্রাউজারকে নির্দিষ্ট কোনো নির্দেশনা দিতে কাজ করে।
+
+HTML
+<!-- প্রতি ৫ সেকেন্ড পর পর পেজ রিফ্রেশ করা -->
+<meta http-equiv="refresh" content="5">
+
+<!-- নির্দিষ্ট সময় পর অন্য লিংকে রিডাইরেক্ট করা (যেমন: ৩ সেকেন্ড পর Google-এ যাবে) -->
+<meta http-equiv="refresh" content="3; url=https://www.google.com">
+৫. সোশ্যাল মিডিয়া ওপেন গ্রাফ (Open Graph / OG)
+আপনার ওয়েবসাইটের লিংক যখন ফেসবুক, লিঙ্কডইন বা অন্যান্য প্ল্যাটফর্মে শেয়ার করা হবে, তখন কী ছবি, শিরোনাম বা বিবরণ দেখাবে তা নির্ধারণ করে।
+
+HTML
+<meta property="og:title" content="HTML Meta Tag শেখার সহজ উপায়">
+<meta property="og:description" content="Meta Tag এর বিভিন্ন উপাদান ও তার ব্যবহার সম্পর্কে বিস্তারিত জানুন।">
+<meta property="og:image" content="https://example.com/image.jpg">
+<meta property="og:url" content="https://example.com/page.html">
+একটি সম্পূর্ণ উদাহরণ (Complete Example)
+একটি আদর্শ HTML5 ডকুমেন্টে কীভাবে মেটা ট্যাগগুলো সাজিয়ে লিখতে হয় তা নিচে দেওয়া হলো:
+
+HTML
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <!-- ক্যারেক্টার সেট -->
+    <meta charset="UTF-8">
+    
+    <!-- মোবাইল রেসপনসিভনেস -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO মেটা ট্যাগ -->
+    <meta name="description" content="HTML Meta Tag এর উপাদান এবং ব্যবহার উদাহরণসহ।">
+    <meta name="keywords" content="HTML, Meta Tag, HTML Bangla Tutorial">
+    <meta name="author" content="শিক্ষা পোর্টাল">
+
+    <title>HTML Meta Tag উদাহরণ</title>
+</head>
+<body>
+    <h1>হ্যালো ওয়ার্ল্ড!</h1>
+    <p>এটি মেটা ট্যাগের একটি সম্পূর্ণ উদাহরণ পেজ।</p>
+</body>
+</html>

@@ -1,0 +1,85 @@
+HTML-এ সবচেয়ে বেশি ব্যবহৃত ও দরকারী HTML Entities (বিশেষ চিহ্নের কোড) নিচে সুন্দরভাবে সাজিয়ে দেওয়া হলো:
+
+১. মৌলিক ও স্ট্রাকচারাল চিহ্ন (Basic & Structural)
+&lt; 👉 Less than sign (<)
+
+&gt; 👉 Greater than sign (>)
+
+&amp; 👉 Ampersand (&)
+
+&quot; 👉 Double quotation mark (")
+
+&apos; 👉 Single quotation mark / Apostrophe (')
+
+&nbsp; 👉 Non-breaking space (একটি খালি স্পেস)
+
+২. মুদ্রা সংক্রান্ত চিহ্ন (Currency Symbols)
+&cent; 👉 Cent sign (¢)
+
+&pound; 👉 Pound sign (£)
+
+&yen; 👉 Yen sign (¥)
+
+&euro; 👉 Euro sign (€)
+
+&#2547; 👉 Bangladeshi Taka sign (৳)
+
+&#36; 👉 Dollar sign ($)
+
+৩. কপিরাইট ও লিগ্যাল চিহ্ন (Copyright & Legal)
+&copy; 👉 Copyright symbol (©)
+
+&reg; 👉 Registered trademark (®)
+
+&trade; 👉 Trademark symbol (™)
+
+৪. গাণিতিক চিহ্ন (Mathematical Symbols)
+&plusmn; 👉 Plus-minus sign (±)
+
+&times; 👉 Multiplication / Cross sign (×)
+
+&divide; 👉 Division sign (÷)
+
+&ne; 👉 Not equal to sign (≠)
+
+&le; 👉 Less-than or equal to (≤)
+
+&ge; 👉 Greater-than or equal to (≥)
+
+&infin; 👉 Infinity sign (∞)
+
+&deg; 👉 Degree sign (°)
+
+&micro; 👉 Micro sign (µ)
+
+৫. তীর ও নির্দেশনা চিহ্ন (Arrow Symbols)
+&larr; 👉 Leftward arrow (←)
+
+&rarr; 👉 Rightward arrow (→)
+
+&uarr; 👉 Upward arrow (↑)
+
+&darr; 👉 Downward arrow (↓)
+
+&harr; 👉 Left right arrow (↔)
+
+৬. অন্যান্য জনপ্রিয় চিহ্ন (Miscellaneous Symbols)
+&bull; 👉 Bullet point (•)
+
+&hellip; 👉 Horizontal ellipsis (...)
+
+&para; 👉 Paragraph sign (¶)
+
+&sect; 👉 Section sign (§)
+
+&spades; 👉 Spade suit (♠)
+
+&clubs; 👉 Club suit (♣)
+
+&hearts; 👉 Heart suit (♥)
+
+&diams; 👉 Diamond suit (♦)
+
+&check; 👉 Check mark (✓)
+
+পরামর্শ: ব্রাউজার যেন এগুলোকে মূল কোড (যেমন <p> ট্যাগ) হিসেবে না ভেবে চিহ্ন হিসেবে প্রদর্শন করে, সেজন্যই এই Entity কোডগুলো ব্যবহার করা হয়।

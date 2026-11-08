@@ -1,0 +1,55 @@
+HTML-এ <form> ট্যাগের ভেতরে ব্যবহার করা প্রধান Elements (উপাদান) এবং সেগুলোর কাজ নিচে তুলে ধরা হলো:
+
+১. <input>
+সবচেয়ে বেশি ব্যবহৃত এলিমেন্ট। type অ্যাট্রিবিউট পরিবর্তন করে বিভিন্ন ধরনের ইনপুট নেওয়া যায়:
+
+type="text" – সাধারণ টেক্সট (যেমন: নাম)
+
+type="email" – ইমেইল অ্যাড্রেস
+
+type="password" – পাসওয়ার্ড (অক্ষরগুলো গোপন থাকে)
+
+type="radio" – অপশন থেকে যেকোনো একটি বেছে নেওয়ার জন্য
+
+type="checkbox" – একের অধিক অপশন সিলেক্ট করার জন্য
+
+type="submit" – ফর্ম সাবমিট করার বাটন
+
+type="file" – ফাইল বা ছবি আপলোড করার জন্য
+
+২. <label>
+ইনপুট ফিল্ডের নাম বা শিরোনাম দেখানোর জন্য ব্যবহার করা হয়। এটিতে ক্লিক করলে সংশ্লিষ্ট ইনপুট ফিল্ডটি সিলেক্ট হয়ে যায়, যা ব্যবহারকারীর অভিজ্ঞতার জন্য খুব দরকারী।
+
+৩. <textarea>
+একের অধিক লাইনের বড় টেক্সট (যেমন: মন্তব্য, মেসেজ বা ঠিকানা) লেখার জন্য ব্যবহৃত হয়।
+
+৪. <select> এবং <option>
+ড্রপডাউন (Dropdown) তালিকা তৈরি করতে ব্যবহার করা হয়। <select> দিয়ে তালিকা শুরু হয় এবং এর ভেতরে <option> দিয়ে প্রতিটি অপশন দেওয়া হয়।
+
+৫. <button>
+ক্লিক করার মতো বাটন তৈরি করে। এটি দিয়ে ফর্ম সাবমিট করা (type="submit"), রিসেট করা (type="reset"), বা জাভাস্ক্রিপ্ট চালানো যায়।
+
+৬. <fieldset> এবং <legend>
+ফর্মে সম্পর্কিত ইনপুটগুলোকে একটি বক্সের ভেতরে গ্রুপ বা দলবদ্ধ করার জন্য <fieldset> ব্যবহার করা হয়। আর সেই গ্রুপের শিরোনাম দিতে <legend> ব্যবহার করা হয়।
+
+একটি সম্পূর্ণ কোড উদাহরণ:
+HTML
+<form action="/submit" method="POST">
+  <!-- Label & Input -->
+  <label for="username">User Name:</label>
+  <input type="text" id="username" name="username" placeholder="Enter name">
+
+  <!-- Textarea -->
+  <label for="bio">Bio:</label>
+  <textarea id="bio" name="bio" rows="4"></textarea>
+
+  <!-- Select Dropdown -->
+  <label for="country">Country:</label>
+  <select id="country" name="country">
+    <option value="bd">Bangladesh</option>
+    <option value="usa">USA</option>
+  </select>
+
+  <!-- Button -->
+  <button type="submit">Submit</button>
+</form>

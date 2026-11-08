@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Picture Tag</title>
+</head>
+<body>
+
+    <picture>
+        <!-- ১. ছোট স্ক্রিনে বা আধুনিক ব্রাউজারে WebP লোড হবে -->
+        <source srcset="./image/html.webp" type="image/webp">
+
+        <!-- ২. বিকল্প হিসেবে JPG (যদি WebP সাপোর্ট না করে) -->
+        <source srcset="./image/html.jng" type="image/jng">
+
+        <source srcset="./image/html.jpeg" type="image/jpeg">
+
+        <source srcset="./image/html.svg" type="image/svg">
+
+
+    </picture>
+
+        <!-- ৩. ব্যাকআপ বা মেইন Fallback image -->
+        <img src="./assets/images/jafor.jpg" alt="জাফর এর ছবি" width="200"
+        height="300">
+         <img src="./image1/jafor.jpg" alt="জাফর এর ছবি" width="200"
+        height="300">
+         <img src="ab.jpg" alt="জাফর এর ছবি" width="200"
+        height="300">
+
+
+
+</body>
+</html>

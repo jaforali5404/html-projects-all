@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width' initial-scale=1.0">
+        <title>html form tag</title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <h1>The from tag is very important for HTML</h1>
+        <form>
+            <div>
+                <label for="">username</label>
+                <input type="username" id="username">
+            </div>
+            <div>
+                <label for="password">inter your password</label>
+                <input type="password" id="password">
+            </div>
+            <div>
+                <label for="number">inter your mobile no</label>
+                <input type="number" id="number" max="11" min="1" value="5">
+            </div>
+            <div>
+                <label for="email">enter your email</label>
+                <input type="emaol" placeholder="enter your name" id="email">
+            </div>
+            <!-- <p>radio/name attribute lekhar karone gender akti select hobe radio dewar karone gol chinno ase</p> -->
+            <div>
+                <label for="gender">gender</label>
+                <input type="radio" name="gender" value="male">male
+                 <input type="radio" name="gender" value="fimale">fimale
+            </div>
+            <!-- <p>checkbox dewor karone select ti 4 kona hoy abong 2 ti select hoy</p> -->
+            <div>
+                <label for="hobbies">fov hobbies</label>
+                <input type="checkbox" name="interrest" value="music">music
+                <input type="checkbox" name="interrest" value="sports">sports
+            </div>
+            <div>
+                <label for="country">fav country: </label>
+                <select name="country" id="country">
+                 <option value="usa">USA</option>
+                 <option value="bang">bang</option>
+                 <option value="nepal">nepal</option>
+                </select>
+            </div>
+            <!-- <p>option a deser nam search dile asena</p> -->
+             <div>
+                <label for="country">select a country: </label>
+                <input type="text" id="country" name="country" list="countres">
+                <datalist id="countres">
+                   <option value="usa">USA</option>
+                 <option value="bang">bang</option>
+                 <option value="nepal">nepal</option>
+                </datalist>
+            </div>
+            <div>
+                <label for="commets">massege us</label>
+                <textarea 
+                 name="commets"
+                 rows="4"
+                 cols="50"
+                 placeholder="enter your name"
+                ></textarea>
+            </div>
+            <!-- <p>file upload korar niyom</p> -->
+            <div>
+                <label for="file"> select file</label>
+                <input type="file" name="fileupload" id="">
+            </div>
+            <div>
+                <label for="textarea">massege</label>
+                <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+            </div>
+            
+            <input type="submit" value="submit">
+
+            <!-- or -->
+
+            <button type="button">submit</button>
+
+            
+        </form>
+        
+    </body>
+
+</html>

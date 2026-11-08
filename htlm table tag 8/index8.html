@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>html table tag</title>
+        <style>
+            table{
+                /* akhane centar er karone majhe,size hoise 1px r color hise & collapse dewor karone single line colom & row hoise */
+                text-align: center;
+                border:1px solid #000;
+                border-collapse: collapse;
+            }
+            /* ai khane td,td,th dewor karone body te row & collam toiry hoise */
+            tr,td,th{
+                border: 3px solid #000;
+                /* padding holo border er vitorer spece & margin holo borderer bairer spece */
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>html table tag</h1>
+        <!-- <p>ami jodi border na nei tahale intarnal css nite hobe</p> -->
+         <!-- <table border="1" r jodi body te dei tahale tho hoilo> -->
+        <table>
+            <thead>
+                <tr>
+                    <th>username</th>
+                    <th>password</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>jafor</td>
+                    <td>korim</td>
+                </tr>
+                <tr>
+                    <td>korim</td>
+                    <td>1232</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <!-- <p>colspan dewer karone table er vitore 2 ta colam ba row thakle 1 ti koraR jonno</p> -->
+
+                    <td colspan="2">count: 2</td>
+                   
+                </tr>
+            </tfoot>
+        </table>
+
+        <hr>
+        
+         <table>
+            <thead>
+                <tr>
+                    <th colspan="7">time table</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <!-- <p>rowspan dewor karone row 6 ta theke 1 ta hoise</p> -->
+                    <td rowspan="6">hours</td>
+                    <td>sat</td>
+                    <td>sun</td>
+                    <td>mon</td>
+                    <td>thr</td>
+                    <td>wed</td>
+                    <td>fri</td>
+                </tr>
+                <tr>
+                    <td>fri</td>
+                    <td>sat</td>
+                    <td>sun</td>
+                    <td>mon</td>
+                    <td>thr</td>
+                    <td>wed</td>
+                </tr>
+                <tr>
+                    <td>fri</td>
+                    <td>sat</td>
+                    <td>sun</td>
+                    <td>mon</td>
+                    <td>thr</td>
+                    <td>wed</td>
+                </tr>
+                <tr>
+                    <td colspan="6">lunch</td>
+                </tr>
+                <tr>
+                    <td>fri</td>
+                    <td>sat</td>
+                    <td>sun</td>
+                    <td>mon</td>
+                    <td>thr</td>
+                    <td rowspan="2">games</td>
+                </tr>
+                <tr>
+                    <td>fri</td>
+                    <td>sat</td>
+                    <td>sun</td>
+                    <td>mon</td>
+                    <td>thr</td>
+                </tr>
+            </tbody>
+         </table>
+
+    </body>    
+
+</html>
